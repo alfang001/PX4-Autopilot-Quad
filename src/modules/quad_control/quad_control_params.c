@@ -106,7 +106,7 @@ PARAM_DEFINE_FLOAT(QUAD_JYY, 0.029);
 PARAM_DEFINE_FLOAT(QUAD_JZZ, 0.055);
 
 /**
- * Motor Thrust Coefficient (N / (kilo-rad/s)^2 ) 
+ * Motor Thrust Coefficient (N / (kilo-rad/s)^2 )
  *
  * @min 0.0
  * @max 10.0
@@ -117,7 +117,7 @@ PARAM_DEFINE_FLOAT(QUAD_JZZ, 0.055);
 PARAM_DEFINE_FLOAT(QUAD_KTHRUST, 5.84);
 
 /**
- * Motor Torque Coefficient (N m / (kilo-rad/s)^2) 
+ * Motor Torque Coefficient (N m / (kilo-rad/s)^2)
  *
  * @min 0.0
  * @max 10.0
@@ -139,7 +139,7 @@ PARAM_DEFINE_FLOAT(QUAD_KTORQUE, 0.35);
 PARAM_DEFINE_FLOAT(QUAD_OMEGA_MAX, 1.1);
 
 /**
- * Land Speed (m/s) 
+ * Land Speed (m/s)
  *
  * @unit m/s
  * @min 0.0
@@ -172,7 +172,7 @@ PARAM_DEFINE_FLOAT(QUAD_ESC_NONLIN, 0.0);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT1_POSX, 0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT1_POSX, 0.15);
 /**
  * Rotor Position (m)
  *
@@ -183,7 +183,7 @@ PARAM_DEFINE_FLOAT(QUAD_ROT1_POSX, 0.15);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT2_POSX, -0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT2_POSX, -0.15);
 /**
  * Rotor Position (m)
  *
@@ -194,7 +194,7 @@ PARAM_DEFINE_FLOAT(QUAD_ROT2_POSX, -0.15);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT3_POSX, 0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT3_POSX, 0.15);
 /**
  * Rotor Position (m)
  *
@@ -205,7 +205,7 @@ PARAM_DEFINE_FLOAT(QUAD_ROT3_POSX, 0.15);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT4_POSX, -0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT4_POSX, -0.15);
 
 /**
  * Rotor Position (m)
@@ -217,7 +217,7 @@ PARAM_DEFINE_FLOAT(QUAD_ROT4_POSX, -0.15);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT1_POSY, 0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT1_POSY, 0.15);
 /**
  * Rotor Position (m)
  *
@@ -228,7 +228,7 @@ PARAM_DEFINE_FLOAT(QUAD_ROT1_POSY, 0.15);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT2_POSY, -0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT2_POSY, -0.15);
 /**
  * Rotor Position (m)
  *
@@ -239,7 +239,7 @@ PARAM_DEFINE_FLOAT(QUAD_ROT2_POSY, -0.15);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT3_POSY, -0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT3_POSY, -0.15);
 /**
  * Rotor Position (m)
  *
@@ -250,4 +250,16 @@ PARAM_DEFINE_FLOAT(QUAD_ROT3_POSY, -0.15);
  * @increment 0.01
  * @group QuadControl
  */
-PARAM_DEFINE_FLOAT(QUAD_ROT4_POSY, 0.15); 
+PARAM_DEFINE_FLOAT(QUAD_ROT4_POSY, 0.15);
+
+/**
+ * Rotor Position (m)
+ *
+ * @unit kg*m/(s^2)
+ * @min 0.0
+ * @max 20.0
+ * @decimal 3
+ * @increment 0.01
+ * @group QuadControl
+ */
+PARAM_DEFINE_FLOAT(CONTROL_UP_BOUND, 7.0);
