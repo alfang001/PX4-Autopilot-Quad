@@ -106,7 +106,8 @@ void GeometricController::run() {
     ei(i) = (ei(i) < -2.0f / ki) ? -2.0f / ki : ei(i);
   }
   Vector3f thrust = -kx * ex - kv * ev - ki * ei - m * g * e3 + m * a_ref;
-
+  // _param_quad_control_upperbound is positive
+  thrust = (thrust > 0) ? std::min(thrust, _param_quad_control_upperbound.get()) : std::max(-1 * _param_quad_control_upperbound.get(), thrust);
   Vector3f b3d = -thrust.unit();
   Vector3f b2d = (b3d.cross(b1_ref)).unit();
   Vector3f b1d = (b2d.cross(b3d)).unit();
