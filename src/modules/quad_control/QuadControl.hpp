@@ -120,5 +120,6 @@ private:
       (ParamFloat<px4::params::QUAD_ROT1_POSY>)_param_quad_rot1_pos_y,
       (ParamFloat<px4::params::QUAD_ROT2_POSY>)_param_quad_rot2_pos_y,
       (ParamFloat<px4::params::QUAD_ROT3_POSY>)_param_quad_rot3_pos_y,
-      (ParamFloat<px4::params::QUAD_ROT4_POSY>)_param_quad_rot4_pos_y)
+      (ParamFloat<px4::params::QUAD_ROT4_POSY>)_param_quad_rot4_pos_y,
+      (ParamFloat<px4::params::CONTROL_UP_BOUND)_param_quad_control_upperbound)
 };
